@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateProductFragment">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical">
+
+       <ImageView
+           android:id="@+id/galeryImage"
+           android:layout_width="143dp"
+           android:layout_height="96dp"
+           android:layout_gravity="center"
+           android:layout_marginTop="30dp"
+           android:src="@drawable/ic_image" />
+
+
+
+       <com.google.android.material.textfield.TextInputLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center"
+           android:layout_marginTop="20dp"
+           android:hint="@string/Header"
+           android:theme="@style/MyTextInputLayout_overlay"
+           style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+           >
+
+           <com.google.android.material.textfield.TextInputEditText
+               android:id="@+id/headerEditText"
+               android:layout_width="250dp"
+               android:layout_height="wrap_content"
+               android:gravity="start"
+               />
+
+       </com.google.android.material.textfield.TextInputLayout>
+
+
+       <com.google.android.material.textfield.TextInputLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center"
+           android:layout_marginTop="20dp"
+           android:hint="@string/Description"
+           android:theme="@style/MyTextInputLayout_overlay"
+           style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+           >
+
+           <com.google.android.material.textfield.TextInputEditText
+               android:id="@+id/descriptionEditText"
+               android:layout_width="239dp"
+               android:layout_height="106dp"
+               android:gravity="start" />
+
+       </com.google.android.material.textfield.TextInputLayout>
+
+       <FrameLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center"
+           android:background="@drawable/spinner_background"
+           android:layout_marginTop="20dp"
+           >
+       <Spinner
+           android:id="@+id/categorySpiner"
+           android:layout_width="250dp"
+           android:layout_height="wrap_content"
+           />
+       </FrameLayout>
+
+       <LinearLayout
+           android:id="@+id/SaveButton"
+           android:layout_width="250dp"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center"
+           android:layout_marginTop="20dp"
+           android:background="@drawable/editext_background"
+           android:clickable="true"
+           android:focusable="true"
+           android:foreground="#00FFFFFF"
+           android:gravity="center"
+           android:textSize="25sp">
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:paddingTop="10dp"
+               android:paddingBottom="10dp"
+               android:text="Save"
+               android:textColor="#fff"
+               android:textSize="20sp" />
+       </LinearLayout>
+
+   </LinearLayout>
+
+</FrameLayout>
